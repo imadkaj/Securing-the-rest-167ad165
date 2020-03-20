@@ -34,7 +34,7 @@
 <?php
 
 $host = '127.0.0.1';
-$db   = 'vragen';
+$db   = 'netland';
 $user = 'root';
 $pass = '';
 $charset = 'utf8mb4';
@@ -58,7 +58,7 @@ $wachtwoord = $_POST['password'];
 if ($naam == 'admin' && $wachtwoord == 'admin'){
     header('location: display.php');
 } elseif ($naam == ''|| $wachtwoord == '') {
-    echo "<p>Insertion Failed <br/> Some Fields are Blank....!!</p>";
+    echo "location: submit.php";
 } else {
     header('location: submit.php');
 }
